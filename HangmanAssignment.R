@@ -74,7 +74,7 @@ while(guessesLeft > 0 ) {
         letter <- letter - 1
         # if all letters in the word have been guessed, player wins. 
         if(letter == 0) {
-          print("Winner")
+          print("Winner! Seceret word is: ", secretWord)
           break
         } 
         # If the guess is not in the secret word. 
@@ -85,7 +85,7 @@ while(guessesLeft > 0 ) {
         print(paste("No,", guessesLeft, "guesses left."))
         # If user runs out of guesses, the game is over. 
         if(guessesLeft == 0) {
-          print("Game Over")
+          print(paste("Game Over. Secret word is: ", secretWord))
         } 
       }
     }
